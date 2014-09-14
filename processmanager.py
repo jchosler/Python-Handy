@@ -57,4 +57,4 @@ class ProcessManager:
             # self.log.debug("Pre join %s is alive? %s" % (process.name, process.is_alive()))
             process.join(timeout) # Ignore if process doesn't respond after timeout
             # self.log.debug("Post join %s is alive? %s" % (process.name, process.is_alive()))
-        self.cleanupProcesses(max_runtime=0)
+        self.cleanupProcesses()
